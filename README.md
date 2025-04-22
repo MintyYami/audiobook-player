@@ -35,8 +35,6 @@ The main goals of this project are:
 3. Supporting appropriate navigation and management of components, alongside good architectural design.
 4. Functionalities including setting playing speed, application theme, and bookmarking audiobook played time.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 ### Built With
 
 * Java
