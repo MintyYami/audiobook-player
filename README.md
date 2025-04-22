@@ -22,8 +22,10 @@ An audiobook player application project for Android OS.
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<img src="images/player.png" alt="Setting page screenshot" height="500">
-<img src="images/settings.png" alt="Setting page screenshot" height="500">
+<p float="left">
+    <img src="images/player.png" alt="Setting page screenshot" height="500">
+    <img src="images/settings.png" alt="Setting page screenshot" height="500">
+</p>
 
 This project is a full-stack mobile application specifically developed for Android devices to play local audiobook files.
 
@@ -46,7 +48,7 @@ The main goals of this project are:
 <!-- USAGE -->
 ## Usage
 
-To run this project, download the app-debug.apk file from the Final-Application folder onto an Android device.
+To run this project, download the ```app-debug.apk``` file from the *Final-Application* folder onto an Android device.
 
 Alternatively, download the source code and use Android Studio and Kotlin to compile and run virtually on an emulator.
 
