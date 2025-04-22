@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/accent0"
+    tools:context=".SettingActivity">
+
+    <TextView
+        android:id="@+id/textTitleSetting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="3pt"
+        android:paddingBottom="3pt"
+        android:text="@string/titleSetting"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewSave"
+        android:layout_width="62dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTintMode="multiply"
+        android:paddingTop="2.5pt"
+        android:text="@string/viewSave"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/textTitleSetting"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollSetting"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/main0"
+        android:gravity="center_horizontal"
+        android:paddingHorizontal="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textTitleSetting">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutPlayer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="27dp" />
+
+            <TextView
+                android:id="@+id/textViewAudioTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="4pt"
+                android:layout_marginVertical="4pt"
+                android:text="@string/titleSpeed"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+
+            <TextView
+                android:id="@+id/textViewSpeed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:labelFor="@+id/editTextNumberSpeed"
+                android:text="@string/subtitleSpeed"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextNumberSpeed"
+                android:layout_width="86dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:autofillHints="Enter a number between 0.25 - 4.00"
+                android:ems="10"
+                android:inputType="number|numberDecimal"
+                android:text="@string/speedDefault"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <SeekBar
+                android:id="@+id/seekBarSpeed"
+                android:layout_width="282dp"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:max="400"
+                android:min="-400"
+                android:progress="0" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="67dp" />
+
+            <TextView
+                android:id="@+id/textViewBGTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="4pt"
+                android:layout_marginVertical="6pt"
+                android:text="@string/titleBG"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="40dp">
+
+                <RadioButton
+                    android:id="@+id/radioButton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingHorizontal="5dp"
+                    android:text="@string/themeMode1"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingHorizontal="5dp"
+                    android:text="@string/themeMode2"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/radioButton3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingHorizontal="5dp"
+                    android:text="@string/themeMode3"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

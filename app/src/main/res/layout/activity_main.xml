@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/accent0"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textTitleMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="3pt"
+        android:paddingBottom="3pt"
+        android:text="@string/titleMain"
+        android:textAlignment="center"
+        android:textColor="@color/main0"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewMenu"
+        android:layout_width="62dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/main0"
+        android:backgroundTint="@color/main0"
+        android:backgroundTintMode="multiply"
+        android:contentDescription="@string/viewMenu"
+        android:focusable="true"
+        android:paddingVertical="2pt"
+        app:layout_constraintBottom_toTopOf="@id/layoutMain"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/icon_settings" />
+
+    <LinearLayout
+        android:id="@+id/layoutMain"
+        android:layout_width="match_parent"
+        android:layout_height="670dp"
+        android:background="@color/main0"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textTitleMain">
+
+        <TextView
+            android:id="@+id/textTitleAudio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="5dp"
+            android:paddingVertical="5dp"
+            android:text="@string/titleAudio"
+            android:textColor="@color/accent0"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerAudio"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:paddingHorizontal="5dp" />
+
+        <TextView
+            android:id="@+id/textTitleBookmark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="5dp"
+            android:paddingVertical="5dp"
+            android:text="@string/titleBookmark"
+            android:textColor="@color/accent0"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerBookmark"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="5dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

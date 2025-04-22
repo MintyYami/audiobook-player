@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">CW_3</string>
+    <!-- main activity-->
+    <string name="titleMain">Audiobook</string>
+    <string name="viewMenu">Settings</string>
+    <string name="titleBookmark">Bookmarks</string>
+    <string name="titleAudio">Audiobook List</string>
+    <!-- settings activity-->
+    <string name="titleSetting">Settings</string>
+    <string name="viewSave">Save</string>
+    <string name="titleSpeed">Playback Speed:</string>
+    <string name="subtitleSpeed">Range: x0.25 - x4.00</string>
+    <string name="titleBG">Application Theme:</string>
+    <string name="themeMode1">Default Mode</string>
+    <string name="themeMode2">Dark Mode</string>
+    <string name="themeMode3">High Contrast Mode (Accessibility)</string>
+    <!-- player activity-->
+    <string name="titlePlayer">Player</string>
+    <string name="viewBack">Back</string>
+    <string name="button1">Previous</string>
+    <string name="button2">Play</string>
+    <string name="button3">Pause</string>
+    <string name="button4">Next</string>
+    <string name="button5">Stop</string>
+    <string name="bookmark">Bookmark Current Audiobook and Timestamp</string>
+    <string name="speedProgress">Progress: 0s</string>
+    <!-- for all -->
+    <string name="speedDefault">1</string>
+    <string name="themeModeDefault">0</string>
+    <string name="audioFolderPath">/storage/self/primary/Music</string>
+    <string name="audioType">.mp3</string>
+</resources>

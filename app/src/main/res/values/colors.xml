@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <!-- theme colours -->
+    <color name="main0">#DCD2D2</color>
+    <color name="accent0">#211F1F</color>
+    <color name="text0">#181717</color>
+    <color name="main1">#2D2D30</color>
+    <color name="accent1">#101012</color>
+    <color name="text1">#FFFFFF</color>
+    <color name="main2">#FFC845</color>
+    <color name="accent2">#003B49</color>
+    <color name="text2">#030B2F</color>
+</resources>
